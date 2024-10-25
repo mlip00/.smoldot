@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+# enable dragging windows with cmd + ctrl
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
+# disable dragging windows with cmd + ctrl
+# defaults delete -g NSWindowShoulDragOnGesture
+
+# link things
+ln -sF ~/.smoldot/.tmux.conf ~/.tmux.conf
+ln -sF ~/.smoldot/.vimrc ~/.vimrc
+ln -sF ~/.smoldot/.zshrc ~/.zshrc
+
