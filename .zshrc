@@ -6,6 +6,11 @@ export TMPDIR="$HOME/.tmp" # fix terraform TMPDIR issue
 # add homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+
+# dtu cluster ssh
+alias sshpc="ssh -i ~/.ssh/gbar s260373@login.hpc.dtu.dk"
+alias schpc="scp -i ~/.ssh/gbar"
+
 # BEGIN mac aliases
 alias update="brew update && brew upgrade && brew cleanup"
 alias poweroff="sudo shutdown -h now"
@@ -20,7 +25,7 @@ alias meditate='zenta now --extended'
 alias adog="git log --all --decorate --oneline --graph"
 alias ..="cd .."
 alias vi="vim"
-alias py="python3"
+alias py="python3.14"
 alias pip="pip3"
 alias tree="tree -C"
 alias t="tree -L 2"
