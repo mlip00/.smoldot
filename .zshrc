@@ -1,7 +1,7 @@
 export EDITOR=/usr/bin/vim
 export PATH="/Users/mlip/bin:$PATH"
-export FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=1
 export TMPDIR="$HOME/.tmp" # fix terraform TMPDIR issue
+export AZURE_CORE_COLLECT_TELEMETRY=0
 
 # add homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
